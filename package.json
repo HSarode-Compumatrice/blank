@@ -41,7 +41,7 @@
     "minimist": "^1.2.0",
     "rxjs": "5.5.11",
     "shelljs": "^0.8.2",
-    "situm-cordova-plugin-official": "git+https://github.com/situmtech/situm-cordova-plugin.git",
+    
     "sw-toolbox": "3.6.0",
     "tooltip": "^1.6.1",
     "xml2js": "^0.4.19",
