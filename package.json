@@ -56,15 +56,7 @@
       "cordova-plugin-splashscreen": {},
       "situm-cordova-plugin-official": {},
       "cordova-plugin-device": {},
-      "cordova-plugin-googlemaps": {
-        "API_KEY_FOR_ANDROID": "AIzaSyBRlkUWcYvRQrfbWquLg3dzRVY6ttBrv24",
-        "API_KEY_FOR_JAVASCRIPT": "AIzaSyBRlkUWcYvRQrfbWquLg3dzRVY6ttBrv24",
-        "API_KEY_FOR_IOS": "AIzaSyBRlkUWcYvRQrfbWquLg3dzRVY6ttBrv24",
-        "LOCATION_WHEN_IN_USE_DESCRIPTION": "Show your location on the map",
-        "LOCATION_ALWAYS_USAGE_DESCRIPTION": "Trace your location on the map",
-        "PLAY_SERVICES_VERSION": "15.0.1",
-        "ANDROID_SUPPORT_V4_VERSION": "27.1.1"
-      }
+      "cordova-plugin-googlemaps": {}
     },
     "platforms": [
       "ios",
