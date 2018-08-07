@@ -1,0 +1,85 @@
+<ion-header>
+  <ion-navbar>
+    <navbar class="bar-calm" title="{{building.name}}"></navbar>
+      <!-- <navbar title="calibre"></navbar> -->
+    <!-- <ion-buttons start>
+      <button ion-button>
+        <ion-icon name="contact"></ion-icon>
+      </button>
+    </ion-buttons>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-buttons end>
+      <button ion-button (click)="doClick()">
+        <ion-icon name="more"></ion-icon>
+      </button>
+    </ion-buttons>-->
+  </ion-navbar>
+</ion-header> 
+<ion-content padding>
+  <ion-fab top left>
+    <button ion-fab mini> 
+      <ion-icon name="arrow-dropright"></ion-icon>
+    </button>
+    <ion-fab-list side="bottom">
+        <button ion-fab mini tooltip content="Show POIs" tooltipPlacement="right" (click)="showPois()" [disabled]="mapHidden()">
+            <!-- <button ion-fab mini tooltip ="Show POIs" positionH="right" (click)="showPois()" [disabled]="mapHidden()"> -->
+  
+          <ion-icon name="logo-buffer"></ion-icon>
+            
+            <!-- <div class="label">Show POIs</div> -->
+          </button>
+          <button ion-fab mini tooltip content="Start Positioning" tooltipPlacement="right" (click)="startPositioning()" [disabled]="mapHidden()">
+            <ion-icon name="play"></ion-icon>
+            <!-- <div class="label">Start Positioning</div> -->
+          </button>
+          <button ion-fab mini tooltip content="Stop Positioning" tooltipPlacement="right" (click)="stopPositioning()" [disabled]="positioningStopped()">
+            <ion-icon name="hand"></ion-icon>
+            <!-- <div class="label">Stop Positioning</div> -->
+          </button>
+          <button ion-fab mini tooltip content="Nav Updates" tooltipPlacement="right" (click)="requestNavigation()" [disabled]="navigationConditionsNotSet()">
+            <ion-icon name="navigate"></ion-icon>
+            <!-- <div class="label">Nav Updates</div> -->
+          </button>
+          <button ion-fab mini tooltip content="Remove Navigation" tooltipPlacement="right" (click)="removeNavigation()" [disabled]="navigationConditionsNotSet()">
+            <ion-icon name="close"></ion-icon>
+            <!-- <div class="label">Remove Navigation</div> -->
+          </button>
+          <button ion-fab mini tooltip ="Clear Cache" positionH="right" (click)="clearCache()">
+            <ion-icon name="git-compare"></ion-icon>
+            <!-- <div class="label">Clear Cache</div> -->
+          </button>
+          <button ion-fab mini tooltip content="Stablish Cache" tooltipPlacement="right" (click)="stablishCache()">
+            <ion-icon name="nuclear"></ion-icon>
+            <!-- <div class="label">Stablish Cache</div> -->
+          </button>
+          <button ion-fab mini tooltip content="Show Default Route" tooltipPlacement="right"(click)="showRoute()" [disabled]="routeConditionsNotSet()">
+            <ion-icon name="paw"></ion-icon>
+            <!-- <div class="label">Show Default Route</div> -->
+          </button>
+      </ion-fab-list>
+    </ion-fab>
+    <map-button class="mapB" building="{{building | json}}" (showBuildingMap)="showMap($event)">
+
+    </map-button>
+ 
+  
+  <ion-row>
+    <ion-item class="item_acc">
+      <ion-label>Accessible</ion-label>
+      <ion-checkbox [checked]="accessible" (ionChange)="updateAccessible()" [disabled]="routeConditionsNotSet()">
+      </ion-checkbox>
+    </ion-item>
+  </ion-row>
+  <ion-item>
+    <!-- <ion-row class="map" *ngIf="this.isButtonVisible" (click)="this.isButtonVisible = false"> -->
+    <ion-row class="map">
+      <ion-col class="map">
+        <div #map id="map">
+          <!-- <ion-icon id="locate" class="locate" ios="ios-locate" md="md-locate"></ion-icon> -->
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-item>
+</ion-content>

@@ -1,0 +1,64 @@
+page-positioning {
+  .mapB{
+      position: relative;
+      float: right;
+      color: blue;
+      text-align: center;
+      text-decoration: none;
+      font-size:auto;    
+      cursor: pointer;
+  }
+ .map,#map {
+   position: flex;
+   height: 460px !important;
+   width: 100% !important;
+   margin: 0px !important;
+   padding: 0px !important;
+  
+ }
+ .building-name {
+   display: block;
+   text-align: center;
+ }
+// .locate{
+//   position: absolute;
+//     bottom: 8px;
+//     right: 16px;
+//     font-size: 25px;
+//     z-index: -1;
+// }
+.item_acc {
+  padding-inline-start: 50px !important;
+  width: 80% !important;
+  }
+  
+  ion-fab {
+    button {
+        box-shadow: 0 4px 10px #6b6b6b;
+    }
+
+    ion-fab-list button[ion-fab] {
+        text-align: center;
+        overflow: visible;
+
+        // div.label {
+        //   position: absolute;
+        //   right: 48px;
+        //   background: rgba(248, 248, 248, 1);
+        //   height: 24px;
+        //   line-height: 16px;
+        //   padding-left: 8px;
+        //   padding-right: 8px;
+        //   padding-top: 5px;
+        //   padding-bottom: 5px;
+        //   margin-top: 8px;
+        //   border-radius: 5px;
+        //   box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.14), 0 4px 5px rgba(0, 0, 0, 0.1);
+        // }
+    }
+
+    .button-inner {
+        overflow: visible;
+    }
+}
+}
