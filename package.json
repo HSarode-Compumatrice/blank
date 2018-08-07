@@ -55,9 +55,8 @@
       "cordova.plugins.diagnostic": {},
       "cordova-plugin-splashscreen": {},
       "situm-cordova-plugin-official": {},
-      "cordova-plugin-device": {},
-      "cordova-plugin-googlemaps": {}
-    },
+      "cordova-plugin-device": {}
+ },
     "platforms": [
       "ios",
       "android"
